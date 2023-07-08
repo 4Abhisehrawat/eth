@@ -16,24 +16,24 @@ pragma solidity 0.8.18;
 */
 contract MyToken {
     // public variables
-    string public myToken = "Abhishek"; // Token Name
-    string public myShort = "Abhi"; // Token Abbreviation
-    uint public total = 0; // Total Supply
+    string public myToken = "Abhishek"; 
+    string public myShort = "Abhi"; 
+    uint public total = 0; 
 
     // mapping variable
-    mapping(address => uint) public balance; // Balances of token holders
+    mapping(address => uint) public balance; 
 
     // mint function
     function mint(address _add, uint _val) public {
-        total += _val; // Increase the total supply
-        balance[_add] += _val; // Increase the balance of the given address
+        total += _val; 
+        balance[_add] += _val; 
     }
 
     // burn function
     function burn(address _add, uint _val) public {
-        if (balance[_add] >= _val) { // Check if the balance of the given address is sufficient for burning
-            total -= _val; // Decrease the total supply
-            balance[_add] -= _val; // Decrease the balance of the given address
+        if (balance[_add] >= _val) { 
+            total -= _val; 
+            balance[_add] -= _val; 
         }
     }
 }
