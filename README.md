@@ -1,4 +1,5 @@
-# eth
+ETH beginner project
+MyToken Contract
 /*
        REQUIREMENTS
     1. Your contract will have public variables that store the details about your coin (Token Name, Token Abbrv., Total Supply)
@@ -12,3 +13,28 @@
     5. Lastly, your burn function should have conditionals to make sure the balance of "sender" is greater than or equal 
        to the amount that is supposed to be burned.
 */
+
+License
+This contract is using the MIT License.
+
+Prerequisites
+Solidity ^0.8.18
+
+Contract Details
+Public variables:
+myToken: A string variable that stores the token name.
+myShort: A string variable that stores the token abbreviation.
+total: A uint variable that tracks the total supply of tokens.
+Mapping variable:
+balance: A mapping that associates addresses with their token balances.
+Mint function:
+The mint function takes two parameters: _add (address) and _val (uint).
+It increases the total supply (total) by the specified _val amount.
+It increases the balance of the specified address (_add) by the specified _val amount.
+Burn function:
+The burn function takes two parameters: _add (address) and _val (uint).
+It first checks if the balance of the specified address (_add) is greater than or equal to the specified _val.
+If the condition is met, it deducts the specified _val from the total supply (total) and from the balance of the specified address.
+
+Video Walkthrough
+https://www.loom.com/share/c63a9b9704a148dda666fdc382dc96c6?sid=0a3ab49e-c9d4-476c-a9e6-f155e83391df
