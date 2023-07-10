@@ -37,4 +37,4 @@ It first checks if the balance of the specified address (_add) is greater than o
 If the condition is met, it deducts the specified _val from the total supply (total) and from the balance of the specified address.
 
 Video Walkthrough
-https://www.loom.com/share/c63a9b9704a148dda666fdc382dc96c6?sid=0a3ab49e-c9d4-476c-a9e6-f155e83391df
+https://www.loom.com/share/2ccedf54b35049b4a4e164f09274e6ee?sid=2efe16d1-61a0-44b4-a5e1-0ca8501d927c
